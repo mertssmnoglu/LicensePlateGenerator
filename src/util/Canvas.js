@@ -4,7 +4,7 @@ const { createCanvas, loadImage, registerFont } = require("canvas")
 
 class Canvas {
     constructor(width, height) {
-        this.importFonts("./fonts/")
+        this.importFonts("./assets/fonts/")
         this.width = width
         this.height = height
         this.canvas = createCanvas(this.width, this.height)
