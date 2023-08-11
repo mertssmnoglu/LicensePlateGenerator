@@ -18,6 +18,8 @@ node_modules/
 *.tgz
 *.map
 
+build
+
 # Logs and databases #
 ######################
 *.log
