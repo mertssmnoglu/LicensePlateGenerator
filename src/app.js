@@ -1,6 +1,6 @@
 const express = require("express")
 const app = express()
-const port = 3000
+const { PORT } = require("./config.js")
 const { logger } = require("./middlewares")
 
 // Middlewares
@@ -22,6 +22,6 @@ app.get("*", function (req, res) {
     })
 })
 
-app.listen(port, () => {
-    console.log(`Plate Generator app listening on port ${port}`)
+app.listen(PORT, () => {
+    console.log(`Plate Generator app listening on port ${PORT}`)
 })
