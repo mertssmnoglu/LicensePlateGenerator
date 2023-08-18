@@ -6,7 +6,8 @@
   "main": "src/app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon"
+    "dev": "nodemon",
+    "lint": "eslint ."
   },
   "keywords": [
     "plater",
@@ -20,6 +21,7 @@
     "express": "^4.18.1"
   },
   "devDependencies": {
+    "eslint": "^8.47.0",
     "nodemon": "^3.0.1"
   }
 }
