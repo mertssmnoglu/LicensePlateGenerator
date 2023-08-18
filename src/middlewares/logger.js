@@ -4,8 +4,9 @@ function logger(req, res, next) {
     const data = {
         method: req.method,
         path: req.path,
-        remoteAddress,
+        remoteAddress: remoteAddress,
         body: req.body || {},
+        query: req.query || {},
     }
 
     console.log(new Date(), data)
