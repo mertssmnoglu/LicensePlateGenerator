@@ -35,7 +35,7 @@ class Canvas {
     }
 
     export(fileName = "image") {
-        const targetDir = "./build/"
+        const targetDir = "./build/plates/"
         fs.writeFileSync(targetDir + fileName + ".png", this.buffer)
     }
 }
